@@ -19,19 +19,19 @@ layout: default
   <div class="container flex justify-center">
 
     <div class="flex-auto center">
-      <img class="js-ornament" src={{ "/img/hole-ornament.png" }} style="width: 83px;" align="top" />
-      <img class="js-ornament" src={{ "/img/horned-ornament.png" }} style="width: 113px;" align="top" />
+      <img class="js-ornament" src={{ "/img/hole-ornament.png" | relative_url }} style="width: 83px;" align="top" />
+      <img class="js-ornament" src={{ "/img/horned-ornament.png" | relative_url }} style="width: 113px;" align="top" />
     </div>
     <div class="flex-none col-12 md-col-5 border-box py4 px2">
   <h1 class="mt0 mb1">
     <span class="h4 white m0">Ragemas presents&hellip;</span>
     <span class="hide">Black Tie Black Dress Vol. II</span>
   </h1>
-  <img class="col-12" src={{ "/img/bt-bt-vol-2-logo.svg" }} style="" />
+  <img class="col-12" src={{ "/img/bt-bt-vol-2-logo.svg" | relative_url }} style="" />
 </div>
     <div class="flex-auto center">
-      <img class="js-ornament" src={{ "/img/bulb-ornament.png" }} style="width: 92px;" align="top" />
-      <img class="js-ornament" src={{ "/img/orb-ornament.png" }} style="width: 112px;" align="top" />
+      <img class="js-ornament" src={{ "/img/bulb-ornament.png" | relative_url }} style="width: 92px;" align="top" />
+      <img class="js-ornament" src={{ "/img/orb-ornament.png" | relative_url }} style="width: 112px;" align="top" />
     </div>
 </div>
 </header>
@@ -92,11 +92,11 @@ layout: default
 </section>
 
 <section class="bg-white relative py4">
-  <img class="absolute" src={{ "/img/accent-image.jpg" }} style="z-index: 0; top: 10rem; left: -40%;" />
+  <img class="absolute" src={{ "/img/accent-image.jpg" | relative_url }} style="z-index: 0; top: 10rem; left: -40%;" />
   <div class="container relative z1 prose-right">
     {% capture interview %}{% include interview.md %}{% endcapture %}
     {{ interview | markdownify }}
-    <img src="/img/niket-signature.png" width="125" class="signature">
+    <img src="{{ /img/niket-signature.png | relative_url }}" width="125" class="signature">
   </div>
 </section>
 
