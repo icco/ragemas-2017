@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,900i|Source+Serif+Pro" rel="stylesheet">
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      body, .serif {
+        font-family: 'Source Serif Pro', serif;
+        color: #333333;
+      }
+      h1, h2, h3, h4, h5, h6, .sans {
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      .mono {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h2, .h2 {
+        font-size: 3rem;
+        line-height: 1.05;
+        margin-top: 0;
+        margin-bottom: 1.375rem;
+        font-weight: 800;
+        font-style: italic;
+      }
+      h3, .h3 {}
+      h4, .h4 {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-weight: 800;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+      .container {
+        max-width: 50rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+      }
+      .bg-black {
+        background-color: #272727;
+      }
+      .bg-silver {
+        background-color: #F6F6F6;
+      }
+      .bg-slate {
+        background-color: #323232;
+      }
+      hr {
+        height: 1px;
+        border: none;
+        background-image: url("/img/golden-border.svg");
+        width: 100vw;
+        margin-top: 2.375rem;
+        margin-bottom: 2.375rem;
+      }
+      .fs-26 {
+        font-size: 1.625rem;
+      }
+      .interview-avatar {
+        display: none;
+      }
+      .btn-primary {
+        background-color: #CDB793;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        font-size: 22px;
+        font-weight: 800;
+      }
+      @media (min-width: 52em) {
+        .container {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      .prose-left {
+        padding-right: 14rem;
+        box-sizing: border-box;
+      }
+      .prose-right {
+        padding-left: 14rem;
+        box-sizing: border-box;
+      }
+      .signature {
+        transform: translateX(-48px);
+      }
+      .interview-avatar {
+        display: block;
+        width: 52px;
+        height: 52px;
+        left: -72px;
+        top: 6px;
+      }
+      }
+      .js-sticky {
+  transform: translateY(-100%);
+}
+.sticky {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transform: translateY(0%);
+  transition: all 300ms ease-in-out;
+}
+
+    </style>
+  </head>
+  <body class="">
+    {{ content }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="/sticky.min.js"></script>
+    <script>
+          new Sticky({
+            target: '.js-sticky',
+            offset: 200
+          });
+
+      var els = document.querySelectorAll('.js-ornament');
+
+var nodeList = anime({
+  targets: els,
+  translateY: function(el, i, l) {
+    return -20 - (i * 5);
+  },
+  direction: 'alternate',
+  easing: 'linear',
+  loop: true,
+  duration: function(el, i, l) { return 5000 + (i * 1000); },
+  elasticity: 600
+});
+    </script>
+  </body>
+</html>
+
