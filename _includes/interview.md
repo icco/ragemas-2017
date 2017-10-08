@@ -2,7 +2,7 @@
 
 
 <div class="relative">
-<img class="absolute interview-avatar" src="/img/xander-pollock.png">
+<img class="absolute interview-avatar" src="{{ "/img/xander-pollock.png" | relative_url }}">
 </div>
 
 ### An Interview with The Founder of Ragemas
@@ -17,7 +17,7 @@ _Editor’s note: When I describe the groomsmen in my wedding I say “Well ther
 #### IT’S BEEN THREE YEARS SINCE THE LAST RAGEMAS. WHY?
 
 <div class="relative">
-<img class="absolute interview-avatar" src="/img/niket-desai.png">
+<img class="absolute interview-avatar" src="{{ "/img/niket-desai.png" | relative_url }}">
 </div>
 
 Ragemas started six years ago. After three years of Ragemas in a row, I left America to work in India. I was living and working in India for two years. What's surprising and interesting is when I came back, a lot of people asked me if Ragemas was coming back, so I decided it should.  
