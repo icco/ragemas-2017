@@ -14,7 +14,7 @@
         font-family: 'Source Serif Pro', serif;
         color: #333333;
       }
-      h1, h2, h3, h4, h5, h6, .sans {
+      h1, h2, h3, h4, h5, h6, .sans, .btn {
         font-family: 'Source Sans Pro', sans-serif;
       }
       .mono {
@@ -72,11 +72,15 @@
         display: none;
       }
       .btn-primary {
-        background-color: #CDB793;
-        border-radius: 8px;
-        padding: 0.5rem 1rem;
-        font-size: 22px;
-        font-weight: 800;
+        font-family: 'Source Sans Pro', sans-serif !important;
+        background-color: #CDB793 !important;
+        border-radius: 8px !important;
+        padding: 0.5rem 1rem !important;
+        font-size: 22px !important;
+        line-height: 1.5 !important;
+        font-weight: 800 !important;
+        font-style: italic !important;
+        text-transform: uppercase !important;
       }
       @media (min-width: 52em) {
         .container {
@@ -125,6 +129,7 @@
   <body class="">
     {{ content }}
 
+    <script async src="https://widget.picatic.com/latest/js/embed.min.js" id="picatic-widget-script"></script>
     <script src="{{ "/sticky.min.js" | relative_url }}"></script>
     <script>
       new Sticky({
