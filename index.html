@@ -6,34 +6,31 @@ layout: default
   <div class="container mx-auto z4">
     <div class="px2 py1 flex flex-center js-sticky-shadow">
       <div class="flex-auto">
-        <h4>Black Tie Black Dress Vol. II</h4>
+        <h4 class="md-show m0">{{ site.title }}</h4>
+        <h4 class="md-hide m0">Ragemas 2017</h4>
       </div>
       <div class="flex-none">
-        <a href="#" class="btn btn-primary inline-block h4">BUY TICKETS</a>
+        <a href="{{ site.ticket_url }}" class="btn btn-primary inline-block h4 sans" style="margin-bottom:0;">BUY TICKETS</a>
       </div>
     </div>
   </div>
 </div>
 
-<header class="bg-black">
+<header class="bg-black py4">
   <div class="container flex justify-center">
 
-    <div class="flex-auto center">
-      <img class="js-ornament" src={{ "/img/hole-ornament.png" | relative_url }} style="width: 83px;" align="top" />
-      <img class="js-ornament" src={{ "/img/horned-ornament.png" | relative_url }} style="width: 113px;" align="top" />
+      <div class="flex-auto"></div>
+    <div class="flex-none col-12 md-col-8 border-box px2">
+      <h1 class="mt0 mb1 hide">
+        Ragemas presents Black Tie Black Dress Vol. II
+      </h1>
+      <img class="col-12" src={{ "/img/blacktieblackdress2_@2x.png" | relative_url }} style="max-width: 440px;" />
     </div>
-    <div class="flex-none col-12 md-col-5 border-box py4 px2">
-  <h1 class="mt0 mb1">
-    <span class="h4 white m0">Ragemas presents&hellip;</span>
-    <span class="hide">Black Tie Black Dress Vol. II</span>
-  </h1>
-  <img class="col-12" src={{ "/img/bt-bt-vol-2-logo.svg" | relative_url }} style="" />
-</div>
-    <div class="flex-auto center">
-      <img class="js-ornament" src={{ "/img/bulb-ornament.png" | relative_url }} style="width: 92px;" align="top" />
-      <img class="js-ornament" src={{ "/img/orb-ornament.png" | relative_url }} style="width: 112px;" align="top" />
-    </div>
-</div>
+      <div class="flex-auto"></div>
+  </div>
+  <div class="container">
+    <h2 class="tagline mt2 mb0 white px2 center" style="">A night  to remember featuring two dancefloors, open bar all night and plenty of more surprises.</h2>
+  </div>
 </header>
 <section class="bg-slate py4">
   <div class="container white sans">
@@ -50,7 +47,7 @@ layout: default
         Regular Price: $129
       </p>
       <p class="mt4 mb2">
-        <a href="#" class="btn btn-primary inline-block h4">BUY TICKETS</a>
+        <a href="{{ site.ticket_url }}" class="btn btn-primary inline-block h4">BUY TICKETS</a>
       </p>
     </div>
     <div class="col col-12 md-col-5 px2">

@@ -113,33 +113,24 @@
   transform: translateY(0%);
   transition: all 300ms ease-in-out;
 }
+.tagline {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 1.375;
+  font-weight: normal;
+}
 
     </style>
   </head>
   <body class="">
     {{ content }}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script src="{{ "/sticky.min.js" | relative_url }}"></script>
     <script>
-          new Sticky({
-            target: '.js-sticky',
-            offset: 200
-          });
-
-      var els = document.querySelectorAll('.js-ornament');
-
-var nodeList = anime({
-  targets: els,
-  translateY: function(el, i, l) {
-    return -20 - (i * 5);
-  },
-  direction: 'alternate',
-  easing: 'linear',
-  loop: true,
-  duration: function(el, i, l) { return 5000 + (i * 1000); },
-  elasticity: 600
-});
+      new Sticky({
+        target: '.js-sticky',
+        offset: 200
+      });
     </script>
   </body>
 </html>
