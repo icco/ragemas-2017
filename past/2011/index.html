@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ragemas 2011</title>
+	<link rel="stylesheet" href="style.css" />
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+</head>
+<body>
+	<div id="roll">
+		<img src="img/RageMas_LOGO_25.png">
+	</div>
+	
+	<div class="details">
+		<div id="drink">
+			<div id="shotglass" class="float">
+				<img src="img/SHOTGLASS-EMPTY.PNG" style="width:50px">
+			</div>
+			<div id="absinthe" class="float">
+				<img src="img/SHOTGLASS-CONTENT.PNG" style="width:50px">
+			</div>
+		</div>
+		<div id="secret" class="float"></div>
+		
+		<div id="cta-pin" class="float">
+			<img src="img/RageMas_NADEPIN_12.png">
+		</div>
+		
+		<div id="cta" class="float">
+			<a href="http://ragemas.eventbrite.com/" target="_blank">
+				<img src="img/RageMas_CTA_12.png">
+			</a>
+		</div>
+		
+	</div>
+</body>
+
+<!--Javascript Shenanigans 
+	=================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Controls background image swapping & title div #roll visibility
+		var current_bg = 0;
+		$('div#drink').click(function() {
+			if(current_bg < bg_imgs.length-1) {
+				current_bg +=1;
+				$('div#roll').addClass("ninja");
+			}
+			else {
+				current_bg = 0;
+				$('div#roll').removeClass("ninja");
+			}
+			$('body').css(	'background',
+			 				'url('+bg_imgs[current_bg]+') no-repeat center center fixed');
+		});
+		
+		// Animate our grenade pin
+		$('div#cta').hover(
+		  function () {
+		    $('div#cta-pin').animate({
+				bottom: '+=50'
+			  }, 250, function() {
+			    // Not firing anything here.
+			  });
+		  }, 
+		  function () {
+			$('div#cta-pin').animate({
+			    bottom: '-=50'
+			  }, 250, function() {
+			    // Don't need to fire anything here either.
+			  });
+		  });
+		
+		// Animate the shotglass
+		$('div#drink').hover(
+		  function () {
+		    $('div#absinthe').animate({
+				height: '+=20',
+				opacity: '1'
+			  }, 500, function() {
+			    // Not firing anything here.
+			  });
+			$('div#shotglass').css('opacity', '1');
+		  }, 
+		  function () {
+			$('div#absinthe').animate({
+			    height: '-=20',
+				opacity: '0'
+			  }, 200, function() {
+			    // Don't need to fire anything here either.
+			  });
+			$('div#shotglass').css('opacity', '0.65');
+		  });
+
+	});
+	
+	// Background image URLs are stored in an array
+	var bg_imgs = [];
+	for (i=0; i<4; i++) {
+		// Set the correct image index
+		bg_imgs[i] = "img/RAGEMAS_BKG" + (i+1) + ".jpg"
+ 	}
+
+	
+	// Image preloading provided by Mika Tuupola
+	// Source at: http://www.appelsiini.net/2007/6/sequentially-preloading-images
+	$(window).bind("load", function() {
+	    var preload = new Array();
+	    $(".preload").each(function() {
+	        s = $(this).attr("src").replace(/\.(.+)$/i, "_on.$1");
+	        preload.push(s)
+	    });
+	    var img = document.createElement('img');
+	    $(img).bind('load', function() {
+	        if(preload[0]) {
+	            this.src = preload.shift();
+	        }
+	    }).trigger('load');
+	});
+	
+	<!--//--><![CDATA[//><!--
+		var images = new Array()
+		function preload() {
+			for (i = 0; i < preload.arguments.length; i++) {
+				images[i] = new Image()
+				images[i].src = preload.arguments[i]
+			}
+		}
+		preload(
+			"http://ragemas.niketdesai.com/img/RAGEMAS_BKG2.jpg",
+			"http://ragemas.niketdesai.com/img/RAGEMAS_BKG3.jpg",
+			"http://ragemas.niketdesai.com/img/RAGEMAS_BKG4.jpg"
+		)
+	//--><!]]>
+	
+</script>
+</html>

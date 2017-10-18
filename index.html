@@ -134,15 +134,18 @@ layout: default
 
     <hr />
     <h4>Friends of Ragemas</h4>
-    <p class="">
+    <p class="white">
     {% for f in site.data.friends %}
-    <a href="{{ f.url }}" class="white">{{ f.name }}</a>
-    {% unless forloop.last %}
-    ,
-    {% else %}
-    .
-    
-    {% endunless %}
+      {% if f.profile %}
+        <a href="{{ f.profile }}" class="white">{{ f.name }}</a>
+      {% else %}
+        {{ f.name}}
+      {% endif %}
+        {% unless forloop.last %}
+          ,
+        {% else %}
+          .
+      {% endunless %}
     {% endfor %}
     </p>
 

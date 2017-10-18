@@ -1,51 +1,34 @@
-- Ryan Alshak:
-    name: Ryan Alshak
-    profile: https://twitter.com/ryanalshak
-- Alex Baldwin:
-    name: Alex Baldwin
-    profile: https://twitter.com/alexbaldwin
-- Stephanie Davis:
-    name: Stephanie Davis
-    profile: https://www.facebook.com/stephanied123
-- Niket Desai:
-    name: Niket Desai
-    profile: https://twitter.com/niket
-- Eva Frye:
-    name: Eva Frye
-    profile: https://twitter.com/iamevafrye
-- Kiyoko Hanjima:
-    name: Kiyoko Hanjima
-    profile: #
-- Matt Joanou:
-    name: Matt Joanou
-    profile: https://twitter.com/mattjoanou
-- Max Johnson:
-    name: Max Johnson
-    profile: #
-- Keri Kopriva:
-    name: Keri Kopriva
-    profile: #
-- Michael Mizono:
-    name: Michael Mizono
-    profile: https://twitter.com/mmizono
-- Reed Morse:
-    name: Reed Morse
-    profile: https://twitter.com/reed
-- Christopher Nolte:
-    name: Christopher Nolte
-    profile: https://twitter.com/chris_nolte
-- Matthew Pies:
-    name: Matthew Pies
-    profile: https://twitter.com/matthewpies
-- Xander Pollock:
-    name: Xander Pollock
-    profile: https://twitter.com/helloxander
-- Josiah Roe:
-    name: Josiah Roe
-    profile: https://instagram.com/josiahq
-- Farzad Sharif:
-    name: Farzad Sharif
-    profile: #
-- Kourosh Zamanizadeh:
-    name: Kourosh Zamanizadeh
-    profile: https://twitter.com/kozykz
+- name: Ryan Alshak
+  profile: https://twitter.com/ryanalshak
+- name: Alex Baldwin
+  profile: https://twitter.com/alexbaldwin
+- name: Stephanie Davis
+  profile: https://www.facebook.com/stephanied123
+- name: Niket Desai
+  profile: https://twitter.com/niket
+- name: Eva Frye
+  profile: https://twitter.com/iamevafrye
+- name: Kiyoko Hanjima
+  profile: #
+- name: Matt Joanou
+  profile: https://twitter.com/mattjoanou
+- name: Max Johnson
+  profile: #
+- name: Keri Kopriva
+  profile: #
+- name: Michael Mizono
+  profile: https://twitter.com/mmizono
+- name: Reed Morse
+  profile: https://twitter.com/reed
+- name: Christopher Nolte
+  profile: https://twitter.com/chris_nolte
+- name: Matthew Pies
+  profile: https://twitter.com/matthewpies
+- name: Xander Pollock
+  profile: https://twitter.com/helloxander
+- name: Josiah Roe
+  profile: https://instagram.com/josiahq
+- name: Farzad Sharif
+  profile: #
+- name: and Kourosh Zamanizadeh
+  profile: https://twitter.com/kozykz

@@ -5,13 +5,13 @@
 - year: 2014
   title: "Black Tie Black Dress"
   highlight_url: "https://niket.exposure.co/black-tie-black-dress"
-  event_url: "http://www.ragemas.com/past/2014/"
+  event_url: "/past/2014/"
 - year: 2013
   title: "Ragemas Samba"
   highlight_url: "https://niket.exposure.co/ragemas-2013"
-  event_url: "http://www.ragemas.com/past/2013/"
+  event_url: "/past/2013/"
 - year: 2011
   title: "Ragemas&reg;"
-  highlight_url: "http://www.ragemas.com/#"
-  event_url: "http://www.ragemas.com/past/2011/"
+  highlight_url: ""
+  event_url: "/past/2011/"
 
