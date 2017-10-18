@@ -10,7 +10,7 @@ addons:
     - sshpass
 after_success:
 - "export SSHPASS=$DEPLOY_PASS"
-- "sshpass -e scp -r _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+- "sshpass -e scp -r ./_site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
