@@ -1,34 +1,51 @@
-- name: "Ryan Alshak"
-  url: ""
-- name: "Alex Baldwin"
-  url: "https://twitter.com/alexbaldwin"
-- name: "Stephanie Davis"
-  url: ""
-- name: "Niket Desai"
-  url: ""
-- name: "Eva Frye"
-  url: ""
-- name: "Kiyoko Hanjima"
-  url: ""
-- name: "Matt Joanou"
-  url: ""
-- name: "Max Johnson"
-  url: ""
-- name: "Keri Kopriva"
-  url: ""
-- name: "Michael Mizono"
-  url: ""
-- name: "Reed Morse"
-  url: ""
-- name: "Christopher Nolte"
-  url: ""
-- name: "Matthew Pies"
-  url: ""
-- name: "Xander Pollock"
-  url: ""
-- name: "Josiah Roe"
-  url: ""
-- name: "Farzad Sharif"
-  url: ""
-- name: "and Kourosh Zamanizadeh"
-  url: ""
+- Ryan Alshak:
+    name: Ryan Alshak
+    profile: https://twitter.com/ryanalshak
+- Alex Baldwin:
+    name: Alex Baldwin
+    profile: https://twitter.com/alexbaldwin
+- Stephanie Davis:
+    name: Stephanie Davis
+    profile: https://www.facebook.com/stephanied123
+- Niket Desai:
+    name: Niket Desai
+    profile: https://twitter.com/niket
+- Eva Frye:
+    name: Eva Frye
+    profile: https://twitter.com/iamevafrye
+- Kiyoko Hanjima:
+    name: Kiyoko Hanjima
+    profile: #
+- Matt Joanou:
+    name: Matt Joanou
+    profile: https://twitter.com/mattjoanou
+- Max Johnson:
+    name: Max Johnson
+    profile: #
+- Keri Kopriva:
+    name: Keri Kopriva
+    profile: #
+- Michael Mizono:
+    name: Michael Mizono
+    profile: https://twitter.com/mmizono
+- Reed Morse:
+    name: Reed Morse
+    profile: https://twitter.com/reed
+- Christopher Nolte:
+    name: Christopher Nolte
+    profile: https://twitter.com/chris_nolte
+- Matthew Pies:
+    name: Matthew Pies
+    profile: https://twitter.com/matthewpies
+- Xander Pollock:
+    name: Xander Pollock
+    profile: https://twitter.com/helloxander
+- Josiah Roe:
+    name: Josiah Roe
+    profile: https://instagram.com/josiahq
+- Farzad Sharif:
+    name: Farzad Sharif
+    profile: #
+- Kourosh Zamanizadeh:
+    name: Kourosh Zamanizadeh
+    profile: https://twitter.com/kozykz
