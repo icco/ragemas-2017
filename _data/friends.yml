@@ -1,17 +1,34 @@
-- Ryan Alshak
-- Alex Baldwin
-- Stephanie Davis
-- Niket Desai
-- Eva Frye
-- Kiyoko Hanjima
-- Matt Joanou
-- Max Johnson
-- Keri Kopriva
-- Michael Mizono
-- Reed Morse
-- Christopher Nolte
-- Matthew Pies
-- Xander Pollock
-- Josiah Roe
-- Farzad Sharif
-- Kourosh Zamanizadeh
+- name: "Ryan Alshak"
+  url: ""
+- name: "Alex Baldwin"
+  url: "https://twitter.com/alexbaldwin"
+- name: "Stephanie Davis"
+  url: ""
+- name: "Niket Desai"
+  url: ""
+- name: "Eva Frye"
+  url: ""
+- name: "Kiyoko Hanjima"
+  url: ""
+- name: "Matt Joanou"
+  url: ""
+- name: "Max Johnson"
+  url: ""
+- name: "Keri Kopriva"
+  url: ""
+- name: "Michael Mizono"
+  url: ""
+- name: "Reed Morse"
+  url: ""
+- name: "Christopher Nolte"
+  url: ""
+- name: "Matthew Pies"
+  url: ""
+- name: "Xander Pollock"
+  url: ""
+- name: "Josiah Roe"
+  url: ""
+- name: "Farzad Sharif"
+  url: ""
+- name: "and Kourosh Zamanizadeh"
+  url: ""

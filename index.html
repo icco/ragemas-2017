@@ -135,8 +135,16 @@ layout: default
     <hr />
     <h4>Friends of Ragemas</h4>
     <p class="">
-      {{ site.data.friends.name | array_to_sentence_string }}.
-    <p>
+    {% for f in site.data.friends %}
+    <a href="{{ f.url }}" class="white">{{ f.name }}</a>
+    {% unless forloop.last %}
+    ,
+    {% else %}
+    .
+    
+    {% endunless %}
+    {% endfor %}
+    </p>
 
     <footer>
       <p class="mt3 mono">WEBSITE BUILT BY ALEX BALDWIN AND THE RAGEMAS CREW</p>
