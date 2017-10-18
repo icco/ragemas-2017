@@ -1,16 +1,16 @@
 language: ruby
 rvm:
-  - 2.3.3
+- 2.3.3
 before_script:
-  - chmod +x ./script/cibuild
+- chmod +x ./script/cibuild
 script: "./script/cibuild"
 addons:
   apt:
     packages:
-      - sshpass
+    - sshpass
 after_success:
-  - export SSHPASS=$DEPLOY_PASS
-  - sshpass -e scp -r _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+- export SSHPASS=$DEPLOY_PASS
+- sshpass -e scp -r _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
